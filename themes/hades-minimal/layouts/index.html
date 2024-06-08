@@ -1,0 +1,9 @@
+{{/*  <h1>Hades says hi.</h1>  */}}
+
+{{ define "main" }}
+    <header class="homepage-header">
+        <div class="container">
+            <h1>{{ site.Title }}</h1>
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
+{{ end }}
